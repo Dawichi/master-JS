@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Interfaces en JQuery UI</title>
+        <!-- 1. Cargar JQuery -->
+        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+        <!-- 2. Cargar el CSS de JQuery UI -->
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+        <!-- 3. Cargar el JQuery UI -->
+        <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="js/06 - JQUI interfaces.js"></script>
+        <style>
+            .el {
+                width: 200px;
+                height: 200px;
+                border: 1px dashed black;
+                background-color: #ccc;
+                float: left;
+                margin: 10px;
+            }
+            .caja-efectos {
+                float: none;
+                background-color: pink;
+            }
+            #area {
+                border: 3px solid green;
+            }
+            #movable {
+                width: 100px;
+                height: 100px;
+                border: 3px solid red;
+            }
+            .lista li {
+                width: 80%;
+                padding: 10px;
+                border: 1px solid black;
+                list-style: none;
+                cursor: pointer;
+            }
+            ul .ui-selecting { background: rgb(80, 252, 80); }
+            ul .ui-selected { background: rgb(104, 185, 252); }
+        </style>
+    </head>
+    <body>
+        <h1>Interfaces en JQuery UI</h1>
+        <hr>
+        <!-- Tooltip -->
+            <h3>Tooltip</h3>
+            <a href="#" title="Sección de datos" id="mis-datos">Mis datos</a>
+        <hr>
+        <!-- Dialog -->
+        <h3>Cuadros de diálogo</h3>
+        <button id="lanzar-dialog">Lanzar diálogo</button>
+        <div id="popup" title="¿Estás seguro?" style="display: none;">
+            <p>Continuar</p>
+        </div>
+        <hr>
+        <!-- Calendario-->
+        <h3>Calendario</h3>
+        <input type="text" name="calendar" id="calendar">
+        <hr>
+        <!-- Tabs-->
+        <h3>Tabs / Pestañas</h3>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Tab 1</a></li>
+                <li><a href="#tabs-2">Tab 2</a></li>
+                <li><a href="#tabs-3">Tab 3</a></li>
+            </ul>
+            <div id="tabs-1">First tab</div>
+            <div id="tabs-2">Second tab</div>
+            <div id="tabs-3">Third tab</div>
+        </div>
+        <hr>
+        <!-- Lista Seleccionable -->
+        <ul class="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ul>
+
+        <button id="mostrar">Mostrar</button>
+        <div class="caja-efectos el"></div>
+
+        <div class="el">Caja de la web 1</div>
+        <div class="el">Caja de la web 2</div>
+        <div class="el">Caja de la web 3</div>
+        
+        <div id="area" class="el"></div>
+        <div id="movable" class="el"></div>
+    </body>
+</html>
