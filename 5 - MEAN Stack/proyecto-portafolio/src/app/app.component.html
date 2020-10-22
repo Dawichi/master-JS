@@ -1,0 +1,86 @@
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">David Fajardo</a>
+
+        <ul class="pure-menu-list">
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link" [routerLink]="['/home']" [routerLinkActive]="['actived']">Home</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link" [routerLink]="['/about']" [routerLinkActive]="['actived']">About</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link" [routerLink]="['/projects']" [routerLinkActive]="['actived']">Projects</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link" [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a></li>
+		</ul>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">My Skillsets</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    System Admin
+                </h3>
+                <p>
+					CentOS/RedHat. Servers: DNS, DHCP, FTP, WEB, MAIL, MI, VoIP. DB admin (SQL & NoSQL). Docker. Git. Cisco networks. Pentesting.
+				</p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-mobile"></i>
+                    Frontend
+                </h3>
+                <p>
+					HTML, CSS, JS, TS. Libraries as JQuery, ReactJS. Frameworks as Angular8, NestJS. Advanced CSS, responsive desing, SASS.
+				</p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-th-large"></i>
+                    Backend
+                </h3>
+                <p>
+					MySQL/MariaDB, MongoDB. MEAN & MERN stack. MVC. REST APIs. PHP with Laravel and Symphony frameworks.
+				</p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-check-square-o"></i>
+                    Polyglot
+                </h3>
+                <p>
+					One of my main passions is learning languages and travel to different countries. Currently I'm mastering my 4º language and starting with the 5º!
+				</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5 icons">
+			<a href="https://www.udemy.com">
+				<img width="100" alt="File Icons" class="pure-img-responsive icon" src="../assets/img/udemy-icon.png">
+			</a>
+			<a href="https://www.platzi.com">
+				<img width="100" alt="File Icons" class="pure-img-responsive icon" src="../assets/img/platzi-icon.png">
+			</a>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5 div-studies">
+
+            <h2 class="content-head content-head-ribbon">Always studying.</h2>
+
+            <p>
+                With a title on System Admin and different online programming courses completed, I keep studying and uncreasing my developing skills. After discover platforms like <a class="white-link" href="https://www.udemy.com">Udemy</a> and <a class="white-link" href="https://www.platzi.com">Platzi</a>, I've fall in love with learning and I'm unable to stop!
+            </p>
+        </div>
+    </div>
+
+    <div class="footer l-box is-center">
+		<p>
+			Icons from <a class="white-link" href="https://iconos8.es/">iconos8.es</a>. Inspiration from <a class="white-link" href="https://purecss.io/">purecss.io</a>. Made with &#9829; and Angular!
+		</p>
+    </div>	
+
+</div>

@@ -1,0 +1,17 @@
+Incluir librerías de JS (jquery, momentjs, ...) en Angular:
+
+	# cd /project-directory
+	# npm install --save jquery
+
+Acceder al angular.json
+Localizar "scripts" e incluir las librerías (jquery) y los plugin (bxslider) deseados
+
+	"scripts": [
+	    "node_modules/jquery/dist/jquery.min.js",
+	    "src/assets/bxslider/dist/jquery.bxslider.min.js"
+	]
+
+Reiniciar la compilación de Angular
+
+	# ^C
+	# ng serve

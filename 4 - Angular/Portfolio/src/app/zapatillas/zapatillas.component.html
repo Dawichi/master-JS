@@ -1,0 +1,31 @@
+<h2>{{title}}</h2>
+<ul>
+    <li *ngFor='let zapatilla of zapatillas'>
+        {{ zapatilla.brand }} - <strong>{{ zapatilla.price }} € </strong>
+
+        <span 
+            *ngIf='zapatilla.price <= 90' 
+            [style.border]="zapatilla.price <= 90 ? '1px solid black' : 'none'"
+            
+        >
+            ¡EN OFERTA!
+        </span>
+    </li>
+</ul>
+
+<p>El color de la zapatilla es:</p>
+<input type="text" [(ngModel)]='color'>
+<ul [ngSwitch]='color'>
+    <li *ngSwitchCase="'yellow'">
+        El color predominante es el <span [ngStyle]="{'color': color}">Amarillo</span>
+    </li>
+    <li *ngSwitchCase="'red'">
+        El color predominante es el <span [ngStyle]="{'color': color}">Rojo</span>
+    </li>
+    <li *ngSwitchCase="'blue'">
+        El color predominante es el <span [ngStyle]="{'color': color}">Azul</span>
+    </li>
+    <li *ngSwitchCase="'orange'">
+        El color predominante es el <span [ngStyle]="{'color': color}">Naranja</span>
+    </li>
+</ul>

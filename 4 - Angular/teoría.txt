@@ -1,0 +1,92 @@
+# Teoría Angular Framework
+
+### Componente
+
+Controla un trozo de la pantalla o de la vista.
+Todo lo que se puede ver en pantalla es controlado y gestionado por este tipo de elementos.
+La lógica de un compoonente dentro de una clase en Angular es que da soporte a una vista interactuando con ella a través de un API con propiedades y métodos.
+El componente hace de mediador entre la vista a traés de la plantilla y la lógica de la app donde se incluirá el modelo de datos, una especie de controlador.
+
+
+### Plantilla
+
+Define la vista de los componentes
+HTMLs con sintaxis especial de Angular. Databinding y directivas.
+
+
+### Decoradores y Metadatos
+
+Decoradores (patrón de diseño) configuramos dinámicamente atributos/metadatos de las clases y componentes.
+Los metadatos describen a las clases pero también describen relaciones.
+
+
+### Servicios
+
+Clases con el objetivo de reutilizar código, elemenmto de la arquitectura de Angular.
+
+
+### Providers
+
+Servicios que proveen de datos o funcionalidades mediante sus métodos. Existen providers propios de Angular o creados por el programador.
+
+
+### Directivas
+
+Funcionalidades aplicables al DOM y a los elementos HTML en las plantillas de un componente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
